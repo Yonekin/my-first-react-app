@@ -1,0 +1,33 @@
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 17px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    flex-grow: 1;
+}
+
+footer p {
+    margin: 0;
+}

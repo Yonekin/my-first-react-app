@@ -1,0 +1,17 @@
+
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    /* Arrange children vertically */
+    align-items: flex-start;
+    width: 100%;
+    height: 90vh;
+}
+@media(max-width: 850px){
+    .landing-page {
+        flex-direction: column; 
+        justify-content: center;
+        overflow: hidden; 
+    }
+}

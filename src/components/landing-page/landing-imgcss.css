@@ -1,0 +1,26 @@
+
+.landing-img {
+    margin-top: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.img-mock{
+    width: 50vw;
+    height: 25vw;
+}
+@media(max-width: 850px){
+    .landing-img{
+        order: 1;
+        width: 100%;
+        height: 50%;
+    }
+    .img-mock{
+        width: 60vh;
+        height: 30vh;
+    }
+
+}
