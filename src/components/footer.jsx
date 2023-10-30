@@ -5,8 +5,8 @@ function Footer() {
     
     return (
         <footer>
-            <div class="footer-content">
-                <div class="social-links">
+            <div className="footer-content"id='footer'>
+                <div className="social-links">
                     <a href="https://github.com/Yonekin" alt="github">
                         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                             alt="GitHub"></img>
