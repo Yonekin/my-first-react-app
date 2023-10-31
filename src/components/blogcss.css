@@ -11,10 +11,16 @@
 .blog-date {
     font-size: 10px;
 }
+.blog-screenshot{
+    max-width: 69%;
+}
 
 @media(max-width: 850px) {
     .blog {
         width: 90%;
         margin: 5%;
+    }
+    .blog-screenshot{
+        max-width: 100%;
     }
 }

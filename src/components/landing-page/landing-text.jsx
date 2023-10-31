@@ -15,7 +15,7 @@ function Landingtext() {
             <div className='landing-buttons'>
            
                 <a href='#'  id='mobile-button1'  className='landing-button'>Blogs</a>
-                <a href='#' className='landing-button'>About</a>
+                <a href='/About' className='landing-button'>About</a>
             </div>
             
             <hr className='line'></hr>

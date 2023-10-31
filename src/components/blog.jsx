@@ -5,32 +5,42 @@ import { useParams } from 'react-router-dom';
 function Blog() {
   const { id } = useParams();
   console.log(id);
+
   const [blogData, setBlogData] = useState({
-    titel: '', // You might want to use proper naming like "title" instead of "titel"
+    titel: '', 
     date: '',
     content: '',
   });
 
   const fetchBlog = async () => {
     try {
-      const response = await fetch(`http://localhost:3003/api/blogs/${id}`);
+      const response = await fetch(`../blogs/blog${id}.json`);
+
       if (!response.ok) {
-        throw new Error('Failed to fetch blog data');
+        throw new Error('Network response was not ok');
       }
+
       const data = await response.json();
-      setBlogData(data);
+      return data;
     } catch (error) {
-      console.error('Error fetching blog data:', error);
+      console.error('Error:', error);
+      return null;
     }
   };
 
   useEffect(() => {
-    fetchBlog();
+    const fetchData = async () => {
+      const data = await fetchBlog();
+      if (data) {
+        setBlogData(data);
+      }
+    };
+    fetchData();
   }, [id]);
 
   return (
     <section className='blog'>
-      <h1 className='blog-header'>{blogData.titel + id}</h1>
+      <h1 className='blog-header'>{blogData.titel}</h1>
       <div className='blog-date'>{blogData.date}</div>
       <div
         className='blog-content'
