@@ -1,3 +1,18 @@
+.blog-card-header{
+    font-size: 1.3em;
+    border-color: black;
+    border-radius: 5px;
+    width: 100%;
+}
+a{
+    width: 100%;
+}
 .blog-card{
-    font-size: 28px;
+    display: flex;
+    height: 4.5em;
+}
+
+.blog-card:hover{
+    background-color:#ebebeb;
+    filter: drop-shadow(0 0 10px #e4bff9);
 }

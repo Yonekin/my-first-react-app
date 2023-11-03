@@ -1,27 +1,14 @@
 
 import './blog-cardcss.css'
 
-function Blogcard() {
-    
-  const fetchBlogs = async () => {
-      let blogs = [];
-      let count = 1
-    while(true){
-          const response = await fetch(`../blogs/blog${id}.json`);
-    
-          if (!response.ok) {
-            break;
-          }
-    
-        blogs[id] = await response.json();
-            
-    }
-    return blogs;
-  };
+function Blogcard(json) {
+
     return (
-        <div>
-            <h1 className='blog-card'>Blog über ein unglaublich interessantes Thema</h1>
-            27.10.2023
+        <div className='blog-card'>
+            <a href={'/blogz/' + json.id}>
+                <h1 className='blog-card-header' key={json.id}>{json.titel}</h1>
+                <div className='date'>{json.date}</div>
+            </a>
         </div>
     );
 }

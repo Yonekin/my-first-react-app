@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Navbar from '../components/navbar.jsx'
-import Landingpage from '../components/landing-page/landing-page.jsx'
 import Footer from '../components/footer.jsx'
-import Blog from '../components/blog.jsx'
-import Blogcard from '../components/blog-card.jsx'
+import Blogcards from '../components/blog-cards.jsx'
 
 function Blogs() {
   const [count, setCount] = useState(0)
@@ -11,7 +9,9 @@ function Blogs() {
   return (
     <>
       <Navbar></Navbar>
-      <Blogcard></Blogcard>
+      <div className='main-div' style={{ height: '80%' }}>
+        <Blogcards></Blogcards>
+      </div>
       <Footer></Footer>
     </>
   )

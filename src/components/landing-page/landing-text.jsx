@@ -1,10 +1,11 @@
+import Blogcard from '../blog-card'; '../blog-card';
 import './landing-textcss.css'
 
 function Landingtext() {
 
     return (
         <div className="landing-text">
-              <div className="intro-text">
+            <div className="intro-text">
                 <h1> Hi iam Yonis. </h1>
                 <h2>
                     This is a Students,<br></br>
@@ -13,22 +14,32 @@ function Landingtext() {
                 </h2>
             </div>
             <div className='landing-buttons'>
-           
-                <a href='#'  id='mobile-button1'  className='landing-button'>Blogs</a>
+
+                <a href='#' id='mobile-button1' className='landing-button'>Blogs</a>
                 <a href='/About' className='landing-button'>About</a>
             </div>
-            
+
             <hr className='line'></hr>
             <div className="content-desktop">
-                <div className="blog-landing">
-                    <a href="">Blog about Ai</a>
-                </div>
-                <div className="blog-landing">
-                    <a href="">Blog about Maschine Learning</a>
-                </div>
-                <div className="blog-landing">
-                    <a href="">Blog about Learning</a>
-                </div>
+                {Blogcard({
+                    "id": "2",
+                    "titel": "How to Animate a rotating 3D Cube",
+                    "date": "27.09.2023",
+                    "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                })}
+                {Blogcard({
+                    "id": "2",
+                    "titel": "How to Animate a rotating 3D Cube",
+                    "date": "27.09.2023",
+                    "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                })}
+                {Blogcard({
+                    "id": "2",
+                    "titel": "How to Animate a rotating 3D Cube",
+                    "date": "27.09.2023",
+                    "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                })}
+          
             </div>
         </div>
     );

@@ -105,14 +105,14 @@ function Landingimg() {
             const canvasMiddleX = canvasWidth / 2;
             const canvasMiddleY = canvasHeight / 2;
             cube = new Cube(canvasMiddleX, canvasMiddleY, 0, canvasHeight / 1.75);
-            if(angle < 8* Math.PI){
+            if(angle < 16* Math.PI){
                 angle+=ANGLE_INCREMENT;
             }else{
                 angle=0;
             }
             cube.rotX(1);
-            cube.rotY(angle/8);
-            cube.rotZ(angle/2);
+            cube.rotY(angle/16);
+            cube.rotZ(angle/4);
             // cube.rotX(Math.PI/4);
             // cube.rotY(angle/2);
             // cube.rotZ(Math.PI/6);
