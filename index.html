@@ -1,13 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YonekinxReact</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <title>YonekinxReact</title>
+</head>
+
+<body>
+  <h1>Intro</h1>
+  Some time ago a friend of mine called me and said something like Yonis you're a programmer... 
+  I knew he was going to ask me something sketchy but I was also interested on what he planned to use my magical programming powers for ;)
+  He send me a Link to a Website and told me that there was a voting for for the best journeyman piece in our region.
+  The voting took place by sending an automated email, that would be generated when clicking on the piece you liked the most.(All the Mails would be send to the same email but with different subjects to indicate for whom the vote was.)
+  To send it one just had to press the send button and the vote would be counted. My friend told me that he already had been sending multiple email's for his favorite(a colleague of him).
+  After inspecting the website I was surprised to see that there were no terms and conditions to participate in the voting. I was know asked to build a script for automated email sending.
+  Of course I knew that a script like that would be at least in the gray area but the challenge got me hocked and I began to script.
+  <h1>Scripting</h1>
+  I began to google how to do it, I found an article about the smtp (simple mail transfer protocol) in python which I had already seen in my practical phase.
+  You can find the article <a href="https://keentolearn.medium.com/automating-emails-with-python-a-comprehensive-guide-ba00fa98b92">here</a>.
+
+  Pretty fast I realized there was not much to do. I tried to get a little deeper understanding by questioning and summoning the holy oracle(Chat GPT) xxD.
+  Soon I had code looking like this.
+
+  <div class="code">
+    <pre>
+        <code>
+            import smtplib
+
+            smtp_server = 'smtp.gmail.com'
+            smtp_port = 587
+            smtp_username = '&lt;username&gt;'
+            smtp_password = '&lt;password&gt;'
+
+            from_email = '&lt;emailfrom&gt;'
+            to_email = '&lt;emailto&gt;'
+            subject = '&lt;subject&gt;'
+            body = '&lt;mailcontent&gt;'
+
+            with smtplib.SMTP(smtp_server, smtp_port) as smtp:
+                smtp.starttls()
+                smtp.login(smtp_username, smtp_password)
+                for i in range(1):
+                    message = f'Subject: {subject}\n\n{body}{i+1}'
+                    smtp.sendmail(from_email, to_email, message)
+        </code>
+    </pre>
+</div>
+
+
+
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

@@ -1,58 +1,18 @@
 import { useState } from 'react';
 import Navbar from '../components/navbar.jsx';
 import Footer from '../components/footer.jsx';
+import AboutPage from '../components/about-page/about-page.jsx';
 
-function Landing() {
+function About() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <Navbar></Navbar>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h1>to be Continued...</h1>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <AboutPage></AboutPage>
       <Footer></Footer>
     </>
   )
 }
 
-export default Landing
+export default About

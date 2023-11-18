@@ -37,7 +37,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.footer-block{
+  min-height: 730px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

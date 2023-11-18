@@ -9,7 +9,9 @@ function Blogz() {
   return (
     <>
       <Navbar></Navbar>
-      <Blog></Blog>
+      <div className='footer-blog'>
+        <Blog></Blog>
+      </div>
       <Footer></Footer>
     </>
   )

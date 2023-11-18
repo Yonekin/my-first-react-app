@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import Navbar from './components/navbar.jsx'
-import Landingpage from './components/landing-page/landing-page.jsx'
-import Footer from './components/footer.jsx'
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Landing from './pages/Landing.jsx'
 import About from './pages/About.jsx'; // Import the About component

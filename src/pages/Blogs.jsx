@@ -9,7 +9,7 @@ function Blogs() {
   return (
     <>
       <Navbar></Navbar>
-      <div className='main-div' style={{ height: '80%' }}>
+      <div className='footer-block' >
         <Blogcards></Blogcards>
       </div>
       <Footer></Footer>

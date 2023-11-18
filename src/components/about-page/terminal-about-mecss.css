@@ -1,0 +1,16 @@
+.terminal{
+    margin-left: 12%;
+    margin-top: 15%;
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    min-height: 900px;
+}
+.terminal-text{
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    color: #4AF626;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

@@ -7,12 +7,21 @@
 .blog-header {
     font-size: 26px;
 }
+h1{
+   font-weight: bolder; 
+   color: #646cff
+}
 
+.code{
+    background-color:var(--darker-background-color);
+    border: 1px solid rgb(212, 209, 209); /* Add a black border */
+    border-radius: 5px;
+}
 .blog-date {
     font-size: 10px;
 }
 .blog-screenshot{
-    max-width: 69%;
+    max-width: 100%;
 }
 
 @media(max-width: 850px) {
